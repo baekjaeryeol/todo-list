@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Kanit:ital,wght@1,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/00663d8851.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>TODO LIST</title>
+</head>
+<body>
+    <div class="container">
+        <!-- 시계 -->
+        <h2 id="clock"></h2>
+
+        <!-- 인사 -->
+        <form id="login-form" class="hidden">
+            <input
+                id="input" 
+                type="text" 
+                placeholder="이름이 무엇입니까?"
+                required
+                maxlength="15"
+                autocomplete="off">
+            <!-- <input type="submit" value="Log In"> -->
+        </form>
+
+        <h1 id="greeting" class="hidden"></h1>
+
+        <!-- 할일 -->
+        <form id="todo-form" class="hidden">
+            <input
+                id="input"
+                type="text" 
+                placeholder="할 일을 적어주세요" 
+                required
+                maxlength="50"
+                autocomplete="off">
+            <i class="fa-solid fa-pencil"></i>
+        </form>
+
+        <!-- 명언 -->
+        <div id="wiseSaying">
+            <span></span>
+            <span></span>
+        </div>
+        
+        <fieldset class="todo-list-div box2 hidden">
+            <legend>할 일 목록</legend>
+            <ul id="todo-list">            
+            </ul>
+        </fieldset>       
+
+        <!-- 날씨 -->
+        <div id="weather">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>            
+        </div>
+    </div>    
+
+    <script src="js/인사.js"></script>
+    <script src="js/시계.js"></script>
+    <script src="js/명언.js"></script>
+    <script src="js/배경.js"></script>
+    <script src="js/할것.js"></script>
+    <script src="js/날씨.js"></script>
+</body>
+</html>
